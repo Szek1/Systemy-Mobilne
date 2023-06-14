@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Wifi Signal Strength</string>
+    <string name="frequency">Częstotliwość: %1$s MHz</string>
+    <string name="RSSI">RSSI: %1$s dBm</string>
+    <string name="SSID">%1$s</string>
+    <string name="distance">Estymowana odległość: %1$s m</string>
+    <string name="speedlink">Prędkość łącza: %1$s Mbps</string>
+    <string name="save_button">Zapisz</string>
+    <string name="history_button">Historia</string>
+    <string name="scan_button">Skanuj</string>
+
+</resources>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/padding_small">
+
+    <TextView
+        android:id="@+id/ssid_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center"
+        android:text="@string/SSID"
+        />
+    <TextView
+        android:id="@+id/textView_frequency"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/ssid_value"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/padding_small"
+        android:text="@string/frequency"/>
+
+    <TextView
+        android:id="@+id/textView_speedlink"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/padding_small"
+        app:layout_constraintTop_toBottomOf="@id/textView_frequency"
+        android:text="@string/speedlink"/>
+
+    <TextView
+        android:id="@+id/textView_rssi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_small"
+        android:text="@string/RSSI"
+        app:layout_constraintTop_toBottomOf="@id/textView_speedlink" />
+
+    <TextView
+        android:id="@+id/textView_distance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_small"
+        android:text="@string/distance"
+        app:layout_constraintTop_toBottomOf="@id/textView_rssi"
+        />
+
+    <Button
+        android:id="@+id/scan_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_small"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/scan_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/save_button"
+        app:layout_constraintTop_toBottomOf="@id/textView_distance"
+        tools:ignore="VisualLintButtonSize" />
+
+    <Button
+        android:id="@+id/save_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/save_button"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintStart_toEndOf="@+id/scan_button"
+        app:layout_constraintEnd_toStartOf="@+id/history_button"
+        app:layout_constraintTop_toTopOf="@id/scan_button"
+        tools:ignore="VisualLintButtonSize" />
+
+    <Button
+        android:id="@+id/history_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/history_button"
+        app:layout_constraintStart_toEndOf="@+id/save_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/scan_button"
+        tools:ignore="VisualLintButtonSize" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
